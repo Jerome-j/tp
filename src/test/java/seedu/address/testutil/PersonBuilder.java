@@ -69,7 +69,7 @@ public class PersonBuilder {
      * Sets the {@code Address} of the {@code Person} that we are building.
      */
     public PersonBuilder withId(int id) {
-        this.id = new Integer(id);
+        this.id = id;
         return this;
     }
 

@@ -131,6 +131,7 @@ public class ModelManager implements Model {
 
     @Override
     public ObservableList<Person> getSingleStudentUsingStudentId(StudentIdPredicate studentIdPredicate) {
+        requireNonNull(studentIdPredicate);
         filteredPersons.setPredicate(studentIdPredicate);
         return filteredPersons;
     }
