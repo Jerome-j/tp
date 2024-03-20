@@ -146,6 +146,7 @@ public class EditCommand extends Command {
         private Email email;
         private Address address;
         private Set<Tag> tags;
+        // TODO: maybe need to change to `Integer` type
         private int id;
 
         public EditPersonDescriptor() {
