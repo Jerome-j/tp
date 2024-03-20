@@ -220,19 +220,11 @@ public class EditCommand extends Command {
         }
 
 
-        /**
-         * Sets {@code studentId} to this object's {@code studentId}.
-         * A defensive copy of {@code studentId} is used internally.
-         */
         public void setStudentId(int studentId) {
             this.id = studentId;
         }
 
-        /**
-         * Returns an unmodifiable tag set, which throws {@code UnsupportedOperationException}
-         * if modification is attempted.
-         * Returns {@code Optional#empty()} if {@code tags} is null.
-         */
+
         public Optional<Integer> getStudentId() {
             return Optional.of(Integer.valueOf(id));
         }
