@@ -30,7 +30,7 @@ public class EmailContainsKeywordPredicate implements Predicate<Person> {
         }
 
         // instanceof handles nulls
-        if (!(other instanceof NameContainsKeywordsPredicate)) {
+        if (!(other instanceof EmailContainsKeywordPredicate)) {
             return false;
         }
 

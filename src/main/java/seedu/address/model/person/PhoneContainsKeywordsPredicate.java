@@ -28,12 +28,12 @@ public class PhoneContainsKeywordsPredicate implements Predicate<Person> {
         }
 
         // instanceof handles nulls
-        if (!(other instanceof NameContainsKeywordsPredicate)) {
+        if (!(other instanceof PhoneContainsKeywordsPredicate)) {
             return false;
         }
 
-        PhoneContainsKeywordsPredicate otherNameContainsKeywordsPredicate = (PhoneContainsKeywordsPredicate) other;
-        return keywords.equals(otherNameContainsKeywordsPredicate.keywords);
+        PhoneContainsKeywordsPredicate otherPhoneContainsKeywordsPredicate = (PhoneContainsKeywordsPredicate) other;
+        return keywords.equals(otherPhoneContainsKeywordsPredicate.keywords);
     }
 
     @Override
