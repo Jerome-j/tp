@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 import seedu.address.commons.util.StringUtil;
+import seedu.address.commons.util.ToStringBuilder;
 
 /**
  * Tests that a {@code Person}'s {@code Email} matches a part of the keywords given.
@@ -22,5 +23,23 @@ public class EmailContainsKeywordPredicate implements Predicate<Person> {
                 .anyMatch(keyword -> StringUtil.containsStringIgnoreCase(person.getEmail().value, keyword));
     }
 
-    // TODO: Override toString and equals
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+
+        // instanceof handles nulls
+        if (!(other instanceof NameContainsKeywordsPredicate)) {
+            return false;
+        }
+
+        EmailContainsKeywordPredicate otherNameContainsKeywordsPredicate = (EmailContainsKeywordPredicate) other;
+        return keywords.equals(otherNameContainsKeywordsPredicate.keywords);
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this).add("keywords", keywords).toString();
+    }
 }
