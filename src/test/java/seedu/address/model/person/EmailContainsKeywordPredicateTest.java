@@ -65,7 +65,7 @@ class EmailContainsKeywordPredicateTest {
         predicate = new EmailContainsKeywordPredicate(Arrays.asList("Carollim"));
         assertFalse(predicate.test(new PersonBuilder().withEmail("carol@google.com").build()));
 
-        // Keywords match phone, email and address, but does not match email
+        // Keywords match phone, email, but does not match email
         predicate = new EmailContainsKeywordPredicate(Arrays.asList("12345", "alice124@email.com", "Main", "Street"));
         assertFalse(predicate.test(new PersonBuilder().withName("Alice").withPhone("999")
                 .withEmail("alice@email.com").withId(12).build()));
