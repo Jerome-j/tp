@@ -22,6 +22,12 @@ public class PhoneContainsKeywordsPredicate implements Predicate<Person> {
                 .anyMatch(keyword -> StringUtil.containsStringIgnoreCase(person.getPhone().toString(), keyword));
     }
 
+    /**
+     * Checks if the current object is equal to the given object.
+     *
+     * @param other The object to compare against
+     * @return True if the objects are equal, false otherwise
+     */
     public boolean equals(Object other) {
         if (other == this) {
             return true;
