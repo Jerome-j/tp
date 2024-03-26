@@ -36,7 +36,7 @@ public class PhoneContainsKeywordsPredicateTest {
     }
 
     @Test
-    public void test_PhoneContainsNumber_returnsTrue() {
+    public void test_phoneContainsNumber_returnsTrue() {
         // One keyword
         PhoneContainsKeywordsPredicate predicate = new PhoneContainsKeywordsPredicate(Collections.singletonList("123"));
         assertTrue(predicate.test(new PersonBuilder().withPhone("91231234").build()));
