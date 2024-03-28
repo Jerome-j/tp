@@ -16,6 +16,8 @@ class EmailContainsKeywordPredicateTest {
 
     @Test
     public void equals() {
+        // Test equality of different objects.
+
         List<String> firstPredicateKeywordList = Collections.singletonList("first");
         List<String> secondPredicateKeywordList = Arrays.asList("first", "second");
 
