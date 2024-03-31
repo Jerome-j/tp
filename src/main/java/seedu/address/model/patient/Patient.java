@@ -21,6 +21,7 @@ public class Patient {
     private final Name name;
     private final Phone phone;
     private final Email email;
+    private final DateTime registeredDateTime;
 
     // Data fields
     private final Set<Tag> tags = new HashSet<>();
@@ -38,7 +39,7 @@ public class Patient {
     /**
      * Every field must be present and not null.
      */
-    public Patient(Name name, Phone phone, Email email, Set<Tag> tags, int studentId) {
+    public Patient(Name name, Phone phone, Email email, Set<Tag> tags, int studentId, DateTime dateTime) {
         requireAllNonNull(name, phone, email, tags, studentId);
         this.name = name;
         this.phone = phone;
@@ -47,6 +48,7 @@ public class Patient {
         this.id = studentId;
         // When we are recreating Person with the Id, the id tracker also keeps note of the next id.
         idTracker = this.id + 1;
+        this.registeredDateTime = dateTime;
     }
 
 
@@ -66,6 +68,7 @@ public class Patient {
         this.email = email;
         this.tags.addAll(tags);
         this.id = studentId;
+        this.registeredDateTime = new DateTime();
     }
 
 
@@ -96,6 +99,10 @@ public class Patient {
      */
     public Set<Tag> getTags() {
         return Collections.unmodifiableSet(tags);
+    }
+
+    public String getRegisteredDate() {
+        return registeredDateTime.displayPrettyFormat();
     }
 
     /**
