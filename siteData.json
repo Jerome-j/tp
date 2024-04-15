@@ -50,7 +50,6 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "appointment": "Appointment",
-        "querying-patients-by-different-parameters": "Querying Patients by different parameters.",
         "adding-a-new-patient": "Adding a New Patient",
         "querying-for-patients": "Querying for Patients",
         "editing-a-current-patient": "Editing a current Patient",
@@ -156,8 +155,8 @@
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
-        "navigating-through-the-history-of-commands": "Navigating through the history of commands",
-        "faq": "FAQ",
+        "navigating-through-the-history-of-successful-commands": "Navigating through the history of successful commands",
+        "frequently-asked-questions-faq": "Frequently Asked Questions (FAQ)",
         "known-issues": "Known issues",
         "command-summary": "Command summary"
       },
