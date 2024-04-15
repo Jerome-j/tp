@@ -142,7 +142,7 @@
         "adding-a-patient-addp": "Adding a patient: addp",
         "listing-all-patients-queryp": "Listing all patients : queryp",
         "listing-selected-patients-that-meet-specified-criterion-criteria-queryp": "Listing selected patients that meet specified criterion / criteria : queryp",
-        "viewing-the-top-10-distinct-tags": "Viewing the top 10 distinct tags",
+        "viewing-the-top-10-distinct-affiliated-with-tags": "Viewing the top 10 distinct affiliated-with tags",
         "editing-a-patient-editp": "Editing a patient : editp",
         "deleting-a-patient-deletep": "Deleting a patient : deletep",
         "adding-an-appointment-adda": "Adding an appointment: adda",
